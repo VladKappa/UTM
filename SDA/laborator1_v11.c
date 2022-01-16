@@ -34,7 +34,6 @@ void write_entry_to_file()
 	struct GhidTelefonic ghid;
 	FILE *cfPtr = open_file();
 	system("cls");
-	printf("Introduceţi EOF pentru a finaliza introducerea.\n");
 	printf("Introduceţi numele: ");
 	scanf("%s", &ghid.nume);
 	printf("Introduceţi prenumele: ");
@@ -104,7 +103,7 @@ void new_file()
 	}
 
 	char nr[3];
-	printf("Introduceti cifrele: ");
+	printf("Introduceti 2 cifre: ");
 	scanf("%s", &nr);
 
 	struct GhidTelefonic *ghid = get_data_from_file();
@@ -132,7 +131,7 @@ int main()
 		printf("Introduceţi interpelarea\n"
 			   "1 – Adauga abonat\n"
 			   "2 – Afiseaza abonati\n"
-			   "3 – Introdu in fisier separat abonatii cu numerele care incep cu cifrele indicate\n"
+			   "3 – Introdu in fisier separat abonatii cu numerele care incep cu doua cifre indicate\n"
 			   "4 - Iesire\n");
 		scanf("%d", &request);
 
