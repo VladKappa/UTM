@@ -18,7 +18,6 @@ void sortmid(char *arr, int k)
 	// printf("k=%d length=%d",k, length);
 	if (k>length-2)
 		k=0;
-	printf("WORKING ARRAY - %s\n", &working_array);
 	char temp[2];
 	// Vrode metoda bulelor
 	for (k; k < length; k++)
